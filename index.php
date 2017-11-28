@@ -89,6 +89,7 @@
       <div class="jumbotron">
         <div class="container">
           <h1>Dados Sobre o Dolar</h1>
+          <br>
             <p>
                 <strong>Compra:</strong>
                     R$ 
@@ -98,14 +99,9 @@
                     R$ 
                     <?php echo $valorVenda ?>  
                     </p>
-                    
+                    <br>
                     <button type="button" class="btn btn-primary">Compra: R$ <?php echo $valorCompra ?></button>
                     <button type="button" class="btn btn-dark">Venda: R$ <?php echo $valorVenda ?></button>
-
-          <p>
-          <a href="#" id="USD" title="Cotação do Dólar Americano Hoje" name="mercado_cotacao">D�lar Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
-
-          </p>
         </div>
       </div>
 
