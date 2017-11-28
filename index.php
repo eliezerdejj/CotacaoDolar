@@ -100,6 +100,7 @@
                     <?php echo $valorVenda ?>  
                     </p>
                     <br>
+                    <img src="img/img-bandeira.jpg" width="60" height="35">
                     <button type="button" class="btn btn-primary">Compra: R$ <?php echo $valorCompra ?></button>
                     <button type="button" class="btn btn-dark">Venda: R$ <?php echo $valorVenda ?></button>
         </div>
