@@ -12,12 +12,12 @@
     }
     fclose($fp);
     $valorCompraHTML = explode('class="numbers">', $conteudo); 
-    $valorCompra = trim(strip_tags($valorCompraHTML[5]));
-    $valorVendaHTML = explode('+', strip_tags($valorCompraHTML[6]));
+    $valorCompra = trim(strip_tags($valorCompraHTML[1]));
+    $valorVendaHTML = explode('+', strip_tags($valorCompraHTML[2]));
     //Valores HTML para exibir no site.	
     $valorVendaHTML = explode('-', $valorVendaHTML[0]);
     $valorVenda  = trim($valorVendaHTML[0]) ;
-    //Valores numéricos para cálculos.	  
+    //Valores numÃ©ricos para cÃ¡lculos.	  
     $valorCompraCalculavel = str_replace(',','.', $valorCompra);
     $valorVendaCalculavel  = str_replace(',','.', $valorVenda);
 ?> 
@@ -26,7 +26,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Cotação Dólar</title>
+    <title>CotaÃ§Ã£o DÃ³lar</title>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -49,7 +49,7 @@
     
 
       <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-      <a class="navbar-brand" href="#">Importações</a>
+      <a class="navbar-brand" href="#">ImportaÃ§Ãµes</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,21 +60,21 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dólar</a>
+          <a class="nav-link" href="#">DÃ³lar</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dados Estatísticos
+          Dados EstatÃ­sticos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Dólar</a>
-            <a class="dropdown-item" href="#">Importações</a>
+            <a class="dropdown-item" href="#">DÃ³lar</a>
+            <a class="dropdown-item" href="#">ImportaÃ§Ãµes</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Estatísticas</a>
+            <a class="dropdown-item" href="#">EstatÃ­sticas</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Informações</a>
+          <a class="nav-link" href="#">InformaÃ§Ãµes</a>
         </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
